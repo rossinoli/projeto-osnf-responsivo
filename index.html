@@ -146,22 +146,26 @@
 
         <section id="form" class="formulario">
             <div class="container">
-                <h2>Formulário Responsivo</h2><br>
+                <h2>Formulário</h2><br>
                 <form>
                 <div class="form-group">
                     <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required aria-describedby="name-desc">
+                    <div id="name-desc" class="form-description">Por favor, insira seu nome completo.</div>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" rrequired aria-describedby="email-desc">
+                    <div id="email-desc" class="form-description">Por favor, insira um endereço de e-mail válido.</div>
                 </div>
                 <div class="form-group">
                     <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" required aria-describedby="message-desc"></textarea>
+                    <div id="message-desc" class="form-description">Por favor, escreva sua mensagem aqui.</div>
                 </div>
                 <button type="submit">Enviar</button>
                 </form>
+                <div id="form-errors" class="form-description" style="display: none;">Por favor, corrija os erros antes de enviar o formulário.</div>
             </div>
         </section>
     </main>

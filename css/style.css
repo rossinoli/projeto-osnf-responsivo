@@ -291,4 +291,17 @@ footer {
         form {
         max-width: 100%;}}
 
+        .form-description {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #888;
+        }
+        
+        #form-errors {
+            display: none;
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
 
